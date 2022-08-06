@@ -1,8 +1,8 @@
 const reducer = (contents = [], action) => {
   switch (action.type) {
-    case "GET_CONTENT":
+    case "GET_CONTENTS":
       return [...contents, action.payload];
-    case "REMOVE_CONTENT":
+    case "REMOVE_CONTENTS":
       return contents.filter((content) => content.id !== action.payload);
     default:
       return contents;

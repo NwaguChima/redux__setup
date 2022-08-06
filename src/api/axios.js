@@ -5,6 +5,6 @@ export const api = axios.create({
 });
 
 export const getContentsHook = async () => {
-  const { data } = await api.get("/posts");
+  const { data } = await api.get("/posts?_page=1&_limit=10");
   return data;
 };
