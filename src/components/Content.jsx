@@ -5,7 +5,6 @@ import "./Content.css";
 const Content = () => {
   const [contents] = useSelector((state) => state.contents);
 
-  console.log(contents);
   return (
     <div className="card">
       <h2>Contents from state</h2>
