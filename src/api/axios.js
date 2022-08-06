@@ -4,7 +4,7 @@ export const api = axios.create({
   baseURL: "https://jsonplaceholder.typicode.com",
 });
 
-export const getPosts = async () => {
+export const getContentsHook = async () => {
   const { data } = await api.get("/posts");
   return data;
 };
